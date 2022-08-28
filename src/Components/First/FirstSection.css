@@ -1,0 +1,92 @@
+body{
+    height:100vh;
+}
+
+.firstSection{
+    display: grid;
+}
+.firstSection .navbar{
+    width:80%;
+    margin-left: 10%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,30%);
+    justify-content: center;
+}
+.firstSection .navbar h5 a{
+    color: #1e1e1e;
+}
+.firstSection .navbar h5 a:hover{
+    text-decoration: none;
+}
+.firstSection .home{
+    display: grid;
+    grid-template-columns: repeat(2,30%);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-column-gap: 50px;
+}
+.firstSection .home .text-home{
+    display: grid;
+    grid-row-gap: 20px;
+}     
+.firstSection .home .text-home h1{
+    position: relative;
+}
+.firstSection .home .text-home h1::before{
+    content: 'Design';
+    position: absolute;
+    top:-55%;
+    color: #ffbd8a;
+    z-index: -1;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #ffbd8a 0px 0px 60px;
+}
+.firstSection .home .text-home h3{
+    font-weight: 400;
+    opacity: .8;
+    letter-spacing: 10px;
+}
+.firstSection .home .text-home a{
+    color: #000000;
+    letter-spacing: 5px;
+}
+.firstSection .home .text-home a:hover{
+    text-decoration: none;
+}
+.firstSection .home .img-home img{
+    border-radius: 170px 5px;
+}
+
+/* Section Second */
+.firstSection .home .second h1::before{
+    content: 'Design';
+    position: absolute;
+    top:-55%;
+    color: #FDBCB3;
+    z-index: -1;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #ffbd8a 0px 0px 60px;
+}
+/* Section Third */
+.firstSection .home .third h1::before{
+    content: 'Your';
+    position: absolute;
+    top:-55%;
+    color: #BCB2E2;
+    z-index: -1;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #ffbd8a 0px 0px 60px;
+}
+.firstSection .home .third a{
+    position: relative;
+}
+.firstSection .home .third a::after{
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: #1e1e1e;
+    position: absolute;
+    top:50%;
+}
